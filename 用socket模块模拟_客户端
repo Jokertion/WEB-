@@ -1,5 +1,5 @@
 # coding: utf-8
-# 模拟客户端
+# 模拟_客户端
 import socket
 
 
