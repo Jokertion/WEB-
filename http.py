@@ -1,6 +1,5 @@
 import socket
 
-
 # 这个程序就是一个套路程序, 套路程序没必要思考为什么会是这样
 # 记住套路, 能用, 就够了
 # 运行这个程序后, 浏览器打开 localhost:2000 就能访问了
@@ -15,7 +14,6 @@ s = socket.socket()
 # s.bind 用于绑定
 # 注意 bind 函数的参数是一个 tuple
 s.bind((host, port))
-
 
 # 用一个无限循环来处理请求
 while True:
