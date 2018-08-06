@@ -1,5 +1,5 @@
-#coding: utf-8
-
+# coding: utf-8
+# 服务器框架
 import socket
 
 
@@ -114,6 +114,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
