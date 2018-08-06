@@ -50,8 +50,6 @@ def error(code=404):
     根据 code 返回不同的错误响应
     目前只有 404
     """
-    # 之前上课我说过不要用数字来作为字典的 key
-    # 但是在 HTTP 协议中 code 都是数字似乎更方便所以打破了这个原则
     e = {
         404: b'HTTP/1.1 404 NOT FOUND\r\n\r\n<h1>NOT FOUND</h1>',
     }
@@ -114,3 +112,26 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+    
+    
+"""
+log raw,  b'POST / HTTP/1.1\r\nHost: localhost:3000\r\nConnection: keep-alive\r\nContent-Length: 11\r\nCache-Control: max-age=0\r\nOrigin: http://localhost:3000\r\nUpgrade-Insecure-Requests: 1\r\nUser-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36\r\nContent-Type: application/x-www-form-urlencoded\r\nAccept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8\r\nReferer: http://localhost:3000/msg\r\nAccept-Encoding: gzip, deflate, br\r\nAccept-Language: en-US,en;q=0.8\r\nCookie: Pycharm-df207d35=600adc10-1f5d
+-46ff-b99f-861b091847e7\r\n\r\nmessage=gua'
+
+log ip and request, ('127.0.0.1', 51905)
+POST / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 11
+
+message=gua
+
+
+GET /?message=GUA HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+
+
+
+"""
