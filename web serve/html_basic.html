@@ -1,34 +1,83 @@
-<!DOCTYPE html>
-<html>  
-    <head>
-        <meta charset="utf-8">
-        <title>例子 1</title>
-    </head>
-    <body>
-        很         好普通版
-        <h1>很好 h1 版</h1>
-        <h2>很好 h2 版</h2>
-        <h3>很好 h3 版</h3>
-        <form action="/" method="get">
-            <input name="author" placeholder="名字">
-            <br>
-            <textarea name="message" placeholder="内容"></textarea>
-            <button type="submit">GET 提交</button>
-        </form>
-        <form action="/lqyj" method="post">
-            <input name="author">
-            <br>
-            <textarea name="message"></textarea>
-            <button type="submit">POST 提交</button>
-        </form>
-    </body>
+
+<html>
+<head>
+    <title> Starbuzz Coffee</title>
+    <style type="" text="text/css">
+                     body {
+                            background-color: #d2b48c;
+                            margin-left: 20%;
+                            margin-right: 20%;
+                            border: 2px dotted black;
+                            padding: 10px 10px 10px 10px;
+                            font-family: sans-serif;
+                     }
+
+    </style>
+</head>
+
+<body>
+<dl>
+    <form action=""
+           method="POST">
+        <p>请输入VIP账号和密码：<br>
+            账号：<input type="text" name="count" value=""> <br>
+            密码：<input type="text" psw="password" value=""><br>
+            <input type="submit"><br>
+            dog<input type="checkbox" name="hotornot" value="coffee"><br>
+            cat<input type="checkbox" name="hotornot" value="coffee"><br>
+            fish<input type="checkbox" name="hotornot" value="coffee"><br>
+            nike<input type="radio" name="hotornot" value="tea"><br>
+            puma<input type="radio" name="hotornot" value="tea"><br>
+            <input type="number" max="10" min="0"><br>
+            <br><br><br>
+            <input type="range" max="100" min="10" step="5"><br>
+             <br><br><br>
+            <input type="date">
+             <br><br><br>
+            Phone:<input type="tel"> <br>
+            Email:<input type="email"> <br>
+            Url:<input type="url"> <br>
+            <select name="characters">
+                <option value="a">afternoon</option>
+                <option value="a">bird</option>
+                <option value="a">cinema</option>
+                <option value="a">donkey</option>
+            </select>
+
+
+            <textarea name="comments" rows="10" cols="48"></textarea>
+            <input type="submit">
+        </p>
+
+    </form>
+    <time>TIME : 2018.07.09</time>
+    <dt>coffee
+    <dd>
+        A drink,which includes many spicies.
+    </dd>
+    </dt>
+</dl>
+<h1>Starbuzz Coffee Beverages</h1>
+<ul>
+    <li>House Blend</li>
+    <li>Mocha Cafe Latte</li>
+    <li>Caoouccino</li>
+    <li>Chai Tea</li>
+    <img src="https://wickedlysmart.com/hfhtmlcss/trivia/pencil.png"
+         alt="The typical new pencil can draw a line 35 miles long.">
+
+</ul>
+<h2>House Blend. $1.49</h2>
+<p>A smooth ,mild belnd of coffee from Mexico, Bolivia and Guatemala.</p>
+<h2>Mocha Cafe Latte, $2.35</h2>
+<p>Espresso, steamed milk and chocolate syrup.</p>
+<h2>Caoouccino, $1.89</h2>
+<p>A mixture of espresso, steamed milk and foam.</p>
+<h2>Chai Tea, $1.85</h2>
+<p>A spicy drink made with black tea, spicies, milk and honey.</p>
+<a  target="_coffee" href="http://www.cnblogs.com/liangmingshen/"
+    title="This is my website,if you want contact us,click it.">Contact us </a>
+</body>
+
+
 </html>
-
-<!--
-POST / HTTP/1.1
-Host: localhost:3000
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 24
-
-author=gua&message=nihao
--->
